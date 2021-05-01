@@ -24,26 +24,23 @@ dependencies {
     implementation "com.github.peacetrue:peacetrue-result"
     implementation "com.github.peacetrue:peacetrue-spring-security:2.1.0-SNAPSHOT"
     implementation "com.github.peacetrue:peacetrue-enum:2.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.file:peacetrue-file-controller:1.1.0-SNAPSHOT"
-    implementation "com.github.peacetrue.file:peacetrue-file-service-impl:1.1.0-SNAPSHOT"
-    implementation "com.github.peacetrue.user:peacetrue-user-controller:1.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.user:peacetrue-user-service-impl:1.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.attachment:peacetrue-attachment-controller:1.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.attachment:peacetrue-attachment-service-impl:1.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.dictionary:peacetrue-dictionary-controller:1.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.dictionary:peacetrue-dictionary-service-impl:1.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.classify:peacetrue-classify-controller:1.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.classify:peacetrue-classify-service-impl:1.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.region:peacetrue-region-controller:1.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.region:peacetrue-region-service-impl:1.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.registration:peacetrue-registration-controller:2.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.registration:peacetrue-registration-service-impl:2.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.notice:peacetrue-notice-controller:2.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.notice:peacetrue-notice-service-impl:2.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.article:peacetrue-article-controller:2.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.article:peacetrue-article-service-impl:2.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.article3:peacetrue-article-controller:1.0.0-SNAPSHOT"
-    implementation "com.github.peacetrue.article3:peacetrue-article-service-impl:1.0.0-SNAPSHOT"
+    implementation 'com.github.peacetrue.merchant:peacetrue-merchant-security:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.merchant:peacetrue-merchant-controller:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.merchant:peacetrue-merchant-service-impl:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.member:peacetrue-member-controller:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.member:peacetrue-member-service-impl:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.goods:peacetrue-goods-controller:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.goods:peacetrue-goods-service-impl:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.order:peacetrue-order-controller:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.order:peacetrue-order-service-impl:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.contact-address:peacetrue-contact-address-controller:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.contact-address:peacetrue-contact-address-service-impl:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.region:peacetrue-region-controller:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.region:peacetrue-region-service-impl:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.file:peacetrue-file-controller:1.1.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.file:peacetrue-file-service-impl:1.1.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.dictionary:peacetrue-dictionary-controller:1.0.0-SNAPSHOT'
+    implementation 'com.github.peacetrue.dictionary:peacetrue-dictionary-service-impl:1.0.0-SNAPSHOT'
     implementation "org.springframework.boot:spring-boot-starter-data-r2dbc"
     implementation "org.springframework.boot:spring-boot-starter-webflux"
     implementation "org.springframework.boot:spring-boot-starter-security"

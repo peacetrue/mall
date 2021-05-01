@@ -58,7 +58,7 @@ peacetrue:
     base-package-paths: com.github.peacetrue
   operator:
     pointcut:
-      expression: 'execution(* cn.ruyijiaoyu.mall..*Service.*(*,..))||execution(* com.github.peacetrue..*Service.*(*,..))'
+      expression: 'execution(* com.github.peacetrue..*Service.*(*,..))'
   file:
     #    base-path: /Users/xiayx/Documents/haohan/mall-server/01-upload
     base-path: /Users/xiayx/Documents/tuchong/mall/01-upload
