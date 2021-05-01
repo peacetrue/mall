@@ -62,7 +62,7 @@ management:
 peacetrue:
   spring:
     security:
-      ignored-urls: ['/users/register','/users/exists','/index.html','/favicon.ico','/manifest.json','/logo192.png','/static/**' ]
+      ignored-urls: [ '/users/register','/users/exists','/index.html','/favicon.ico','/manifest.json','/logo192.png','/static/**' ]
   enum:
     base-package-paths: com.github.peacetrue
   operator:
@@ -71,3 +71,8 @@ peacetrue:
   file:
     base-path: /Users/xiayx/Documents/tuchong/mall/01-upload
     host: https://peacetrue.cn/platform/files/
+  jackson:
+    mix-ins:
+      com.github.peacetrue.user.UserVO: com.github.peacetrue.convention.PasswordIgnorer
+      com.github.peacetrue.merchant.MerchantVO: com.github.peacetrue.convention.PasswordIgnorer
+      com.github.peacetrue.member.MemberVO: com.github.peacetrue.convention.PasswordIgnorer

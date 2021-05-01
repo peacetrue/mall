@@ -8222,15 +8222,6 @@ peacetrue-react-admin@^0.0.0-9:
     react-admin "^3.6.1"
     react-dom "^16.13.1"
 
-peacetrue-user@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/peacetrue-user/-/peacetrue-user-0.2.0.tgz#9178e5cc61d151315ef5f83b321fe12bbd80f0fc"
-  integrity sha512-VCWqVJBJmxgZ2hSEYr1STlMYCrxqEYOUyx0Iz9pu++ualDI0/gcEMqsPurPfSQSPcaJrUlZ7mV9Y6wYSIxY4IA==
-  dependencies:
-    react "^16.13.1"
-    react-admin "^3.14.0"
-    react-dom "^16.13.1"
-
 performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"

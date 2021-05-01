@@ -53,12 +53,15 @@ logging:
 peacetrue:
   spring:
     security:
-      ignored-urls: [ '/members/register','/members/exists','/index.html','/favicon.ico','/manifest.json','/logo192.png','/static/**' ]
+      ignored-urls: [ '/merchants/register','/merchants/exists','/index.html','/favicon.ico','/manifest.json','/logo192.png','/static/**' ]
   enum:
     base-package-paths: com.github.peacetrue
   operator:
     pointcut:
       expression: 'execution(* com.github.peacetrue..*Service.*(*,..))'
   file:
-    #    base-path: /Users/xiayx/Documents/haohan/mall-server/01-upload
     base-path: /Users/xiayx/Documents/tuchong/mall/01-upload
+  jackson:
+    mix-ins:
+      com.github.peacetrue.merchant.MerchantVO: com.github.peacetrue.convention.PasswordIgnorer
+      com.github.peacetrue.member.MemberVO: com.github.peacetrue.convention.PasswordIgnorer

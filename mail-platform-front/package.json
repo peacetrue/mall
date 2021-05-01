@@ -7,7 +7,6 @@
     "peacetrue-core": "^0.0.0-2",
     "peacetrue-httpclient": "^0.0.6",
     "peacetrue-react-admin": "^0.0.0-9",
-    "peacetrue-user": "^0.2.0",
     "pretty-bytes": "^5.4.1",
     "qs": "^6.9.4",
     "quill": "^1.3.7",
