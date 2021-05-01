@@ -1,0 +1,16 @@
+{
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true
+  },
+  "appid": "ttd06ba6d64f53646801",
+  "projectname": "mall",
+  "condition": {
+    "miniprogram": {
+      "current": -1
+    }
+  }
+}

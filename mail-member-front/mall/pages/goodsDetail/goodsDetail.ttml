@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="goods">
+    <swiper indicator-dots="{{indicatorDots}}" indicator-color="rgba(0, 0, 0, .3)"
+      indicator-active-color="rgba(0, 0, 0, 1)" current="{{0}}" current-item-id="" previous-margin="" next-margin=""
+      display-multiple-items="{{1}}" autoplay="{{true}}" interval="{{interval}}" circular="{{circular}}"
+      vertical="{{vertical}}" duration="{{duration}}" bindanimationfinish="animationFinish" bindtransition="transition">
+      <block tt:for="{{goods.coverImageUrls}}">
+        <swiper-item>
+          <view class="swiper-item">
+            <image class="image" src="{{item}}" />
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class="content">
+      <text class="name">{{goods.name}}</text>
+      &nbsp;
+      <text class="price">¥{{goods.price}}</text>
+    </view>
+    <rich-text nodes="{{goods.detail}}" class="detail"></rich-text>
+  </view>
+</view>

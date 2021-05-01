@@ -1,0 +1,16 @@
+.container {
+  margin: 30px;
+  text-align: center;
+}
+
+.goods{
+  margin: 40px 0; 
+}
+
+.content{
+  text-align: left;
+}
+
+.price{
+  color: red;
+}

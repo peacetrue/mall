@@ -1,0 +1,27 @@
+server:
+  port: 8111
+
+db:
+  hostname: localhost
+  username: root
+  password: 12345678
+  schema: mall
+
+logging:
+  level:
+    root: info
+  file:
+    path: /root/peacetrue/mall/admin/01-logs
+    max-history: 2
+
+# 81 : /root/peacetrue/mall/mall-front-end
+cn:
+  ruyijiaoyu:
+    mall:
+      template-folder: /root/peacetrue/mall/mall-front-end
+      output-folder: ${cn.ruyijiaoyu.mall.template-folder}/generated
+      static-resource-location: 'http://101.200.133.86:81'
+
+peacetrue:
+  file:
+    base-path: ${cn.ruyijiaoyu.mall.template-folder}

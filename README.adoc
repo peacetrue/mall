@@ -1,4 +1,4 @@
-= gradle 模板项目
+= 商城
 xiayx <xiayouxue@hotmail.com>
 v1.0, 2019-08-23: SNAPSHOT
 :doctype: docbook
@@ -10,4 +10,5 @@ v1.0, 2019-08-23: SNAPSHOT
 :testsourcedir: src/test/java
 :source-highlighter: highlightjs
 
-详情参考 https://peacetrue.cn/summarize/peacetrue-template-gradle/index.html[安宁的博客^]。
+
+cp -R /Users/xiayx/Documents/haohan/confucianism-server/confucianism-react-admin/node_modules/* /Users/xiayx/Documents/tuchong/mall/mail-platform-front/node_modules
