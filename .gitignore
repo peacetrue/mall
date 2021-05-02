@@ -36,3 +36,6 @@ hs_err_pid*
 01-upload
 02-download
 */**/.vscode
+**/package-lock.json
+**/yarn.lock
+peacetrue-publish

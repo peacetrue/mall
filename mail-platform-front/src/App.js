@@ -5,22 +5,23 @@ import polyglotI18nProvider from 'ra-i18n-polyglot';
 import chineseMessages from 'ra-language-chinese';
 import {authProvider, dataProvider2 as dataProvider} from "./instances";
 import customRoutes from './customRoutes';
-import messages from "./messages";
+import {Messages} from "./Messages";
 import CustomLayout from "./CustomLayout";
-import Dashboard from "./Dashboard";
-import DictionaryValueResource from "./modules/dictionary-values";
-import ClassifyResource from "./modules/classifys";
-import FileResource from "./modules/files";
-import DictionaryTypeResource from "./modules/dictionary-types";
-import RegionResource from "./modules/regions";
-import MemberResource from "./modules/members";
-import MerchantResource from "./modules/merchants";
-import UserResource from "./modules/users";
-import ContactAddressResource from "./modules/contact-addresses";
-import GoodsResource from "./modules/goods";
-import OrderResource from "./modules/orders";
+import {Dashboard} from "./Dashboard";
+import {DictionaryTypeResource, DictionaryValueResource} from "peacetrue-dictionary";
+import {ClassifyResource} from "./modules/classifys";
+import {FileResource} from "peacetrue-file";
+import {RegionResource} from "peacetrue-region";
+import {MemberResource} from "peacetrue-member";
+import {MerchantResource} from "peacetrue-merchant";
+import {UserResource} from "peacetrue-user";
+import {ContactAddressResource} from "peacetrue-contact-address";
+import {GoodsResource} from "peacetrue-goods";
+import {OrderResource} from "peacetrue-order";
+import {AttachmentResource} from "peacetrue-attachment";
 
-const i18nProvider = polyglotI18nProvider(() => mergeTranslations(chineseMessages, messages), 'cn');
+console.info("process.env:", process.env);
+const i18nProvider = polyglotI18nProvider(() => mergeTranslations(chineseMessages, Messages), 'cn');
 
 const App = () => (
     <Admin title="抖音商城"
@@ -43,6 +44,7 @@ const App = () => (
                 DictionaryTypeResource,
                 DictionaryValueResource,
                 FileResource,
+                AttachmentResource,
                 RegionResource,
             ];
             resources.push(<Resource name={'enums/goodsDisplay'}/>);
@@ -52,7 +54,6 @@ const App = () => (
             resources.push(<Resource name={'enums'}/>);
             // resources.push(<Resource name={'dictionary-types'} show={DictionaryTypeShow}/>);
             resources.push(<Resource name={'profile'}/>);
-            resources.push(<Resource name={'static-contents'}/>);
             return resources;
         }}
     </Admin>

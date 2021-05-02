@@ -13,7 +13,7 @@ import {
   useGetIdentity
 } from "react-admin";
 import Paper from '@material-ui/core/Paper';
-import {userRules} from "../users/UserCommon";
+import {UserRules} from "peacetrue-user";
 
 const EditToolbar = (props: any) => (
   <Toolbar {...props} >
@@ -52,8 +52,8 @@ export const Profile = (props: any) => {
                   {...rest}
             >
               <SimpleForm toolbar={<EditToolbar/>}>
-                <PasswordInput label={'原密码'} source="oldPassword" validate={userRules.password} fullWidth/>
-                <PasswordInput label={'新密码'} source="newPassword" validate={userRules.password} fullWidth/>
+                <PasswordInput label={'原密码'} source="oldPassword" validate={UserRules.password} fullWidth/>
+                <PasswordInput label={'新密码'} source="newPassword" validate={UserRules.password} fullWidth/>
               </SimpleForm>
             </Edit>
           </Paper>
