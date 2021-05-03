@@ -5,8 +5,7 @@ import {PeaceAuthProviderBuilder} from "./PeaceAuthProviderBuilder";
 import {AuthProviderHttpClient, DataProviderHttpClient} from "./PeaceHttpClient";
 import {MemberResource} from "peacetrue-member"
 import {OrderResource} from "peacetrue-order";
-import {GoodsResource} from "./modules/goods";
-// import {GoodsResource} from "/Users/xiayx/Documents/Projects/peacetrue-goods/peacetrue-goods-react-admin/src/modules/goods";
+import {GoodsResource} from "peacetrue-goods";
 import {EnumResources} from "./PeaceEnum";
 import {Messages} from "./Messages";
 import polyglotI18nProvider from "ra-i18n-polyglot"

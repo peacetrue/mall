@@ -11,7 +11,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "peacetrue-contact-address": "^0.0.0-1",
-    "peacetrue-goods": "^0.0.0-3",
+    "peacetrue-goods": "0.0.0-4",
     "peacetrue-member": "^0.0.0-1",
     "peacetrue-order": "^0.0.0-1",
     "peacetrue-react-admin": "0.0.0-21",
