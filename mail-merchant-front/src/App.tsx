@@ -3,6 +3,10 @@ import {Admin, Resource} from "react-admin";
 import {PeaceSpringDataProviderBuilder} from "peacetrue-react-admin";
 import {PeaceAuthProviderBuilder} from "./PeaceAuthProviderBuilder";
 import {AuthProviderHttpClient, DataProviderHttpClient} from "./PeaceHttpClient";
+import {MemberResource} from "peacetrue-member"
+import {OrderResource} from "peacetrue-order";
+import {GoodsResource} from "./modules/goods";
+import {EnumResources} from "./PeaceEnum";
 
 function App() {
   let url = process.env.REACT_APP_BASE_URL as string;
@@ -11,6 +15,11 @@ function App() {
            authProvider={PeaceAuthProviderBuilder({url, httpClient: AuthProviderHttpClient})}
            dataProvider={PeaceSpringDataProviderBuilder(url, DataProviderHttpClient)}
     >
+      {GoodsResource}
+      <Resource name={"merchants"}/>
+      {OrderResource}
+      {MemberResource}
+      {EnumResources}
     </Admin>
   );
 }
