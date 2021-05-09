@@ -13,7 +13,7 @@ import {
   useGetIdentity
 } from "react-admin";
 import Paper from '@material-ui/core/Paper';
-import {UserRules} from "peacetrue-user";
+import {UserRules} from "@peace/user";
 
 const EditToolbar = (props: any) => (
   <Toolbar {...props} >

@@ -1,13 +1,19 @@
 import React from 'react';
 import {Admin, Resource} from "react-admin";
-import {PeaceEnv, PeaceSpringDataProviderBuilder} from "peacetrue-react-admin";
-import {PeaceAuthProviderBuilder} from "./PeaceAuthProviderBuilder";
-import {AuthProviderHttpClient, DataProviderHttpClient} from "./PeaceHttpClient";
-import {MemberResource} from "peacetrue-member"
-import {OrderResource} from "peacetrue-order";
-import {GoodsResource} from "peacetrue-goods";
-import {EnumResources} from "./PeaceEnum";
+import {
+  AuthProviderHttpClient,
+  DataProviderHttpClient,
+  EnumResources,
+
+PeaceAuthProviderBuilder,
+  PeaceEnv,
+  PeaceSpringDataProviderBuilder
+} from "@peace/react-admin";
+import {OrderResource} from "@peace/order";
+import {Goods, GoodsResource} from "@peace/goods";
 import {Messages} from "./Messages";
+import {Member} from "@peace/member";
+import {ContactAddress} from "@peace/contact-address";
 import polyglotI18nProvider from "ra-i18n-polyglot"
 
 function App() {
@@ -20,7 +26,9 @@ function App() {
       {GoodsResource}
       <Resource name={"merchants"}/>
       {OrderResource}
-      {MemberResource}
+      <Resource name={"goods"} show={Goods.show}/>
+      <Resource name={"members"} show={Member.show}/>
+      <Resource name={"contact-addresses"} show={ContactAddress.show}/>
       {EnumResources}
     </Admin>
   );

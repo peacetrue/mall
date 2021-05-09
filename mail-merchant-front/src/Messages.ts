@@ -1,8 +1,8 @@
-import {RegionMessages} from "peacetrue-region";
-import {MemberMessages} from "peacetrue-member";
-import {ContactAddressMessages} from "peacetrue-contact-address";
-import {GoodsMessages} from "peacetrue-goods";
-import {OrderMessages} from "peacetrue-order";
+import {RegionMessages} from "@peace/region";
+import {MemberMessages} from "@peace/member";
+import {ContactAddressMessages} from "@peace/contact-address";
+import {GoodsMessages} from "@peace/goods";
+import {OrderMessages} from "@peace/order";
 import {mergeTranslations} from "react-admin";
 
 export const Messages = mergeTranslations(

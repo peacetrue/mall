@@ -1,8 +1,8 @@
-import {HttpClient} from "peacetrue-httpclient";
+import {HttpClient} from "@peace/httpclient";
 import {AuthProvider} from "react-admin";
 
 const globalAuthorities: Record<string, string[]> = {
-  'peacetrue': ['SUPER_MANAGER'],
+  'supermanager': ['SUPER_MANAGER'],
   'admin': ['MANAGER'],
 };
 
@@ -14,7 +14,6 @@ export const AuthProviderBuilder = (url: string, httpClient: HttpClient): AuthPr
           console.info("login user:", user);
           localStorage.setItem('token', JSON.stringify(user));
           let username = user.username;
-          //let authorities = user.authorities.map(item => item.authority.replace('ROLE_', ''));
           let authorities = globalAuthorities[username] || ['USER'];
           let isSuperManager = authorities.indexOf('SUPER_MANAGER') !== -1;
           localStorage.setItem('permissions', JSON.stringify({

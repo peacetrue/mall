@@ -1,14 +1,14 @@
-import {RegionMessages} from "peacetrue-region";
-import {UserMessages} from "peacetrue-user";
-import {ClassifyMessages} from "./modules/classifys/Messages";
-import {FileMessages} from "peacetrue-file";
-import {AttachmentMessages} from "peacetrue-attachment";
-import {DictionaryTypeMessages, DictionaryValueMessages} from "peacetrue-dictionary";
-import {MemberMessages} from "peacetrue-member";
-import {MerchantMessages} from "peacetrue-merchant";
-import {ContactAddressMessages} from "peacetrue-contact-address";
-import {GoodsMessages} from "peacetrue-goods";
-import {OrderMessages} from "peacetrue-order";
+import {RegionMessages} from "@peace/region";
+import {UserMessages} from "@peace/user";
+import {ClassifyMessages} from "@peace/classify";
+import {FileMessages} from "@peace/file";
+import {AttachmentMessages} from "@peace/attachment";
+import {DictionaryTypeMessages, DictionaryValueMessages} from "@peace/dictionary";
+import {MemberMessages} from "@peace/member";
+import {MerchantMessages} from "@peace/merchant";
+import {ContactAddressMessages} from "@peace/contact-address";
+import {GoodsMessages} from "@peace/goods";
+import {OrderMessages} from "@peace/order";
 import {mergeTranslations} from "react-admin";
 
 export const Messages = mergeTranslations(

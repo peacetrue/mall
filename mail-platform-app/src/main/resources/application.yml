@@ -17,7 +17,7 @@ logging:
 db:
   hostname: localhost
   username: root
-  password: 12345678
+  password: 1qw2!QW@
   schema: mall
 
 spring:

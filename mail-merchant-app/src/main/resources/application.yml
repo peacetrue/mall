@@ -8,7 +8,7 @@ server:
 db:
   hostname: localhost
   username: root
-  password: 12345678
+  password: 1qw2!QW@
   schema: mall
 
 spring:
@@ -36,6 +36,9 @@ spring:
     allow-bean-definition-overriding: true
   session:
     timeout: 36000
+  jackson:
+    serialization:
+      WRITE_ENUMS_USING_INDEX: true
 
 management:
   endpoints:
@@ -47,7 +50,8 @@ management:
         allowed-methods: "*"
 logging:
   level:
-    root: debug
+    com.github.peacetrue: trace
+#    org.springframework: debug
   file:
     max-history: 2
 peacetrue:
@@ -61,7 +65,9 @@ peacetrue:
       expression: 'execution(* com.github.peacetrue..*Service.*(*,..))'
   file:
     base-path: /Users/xiayx/Documents/tuchong/mall/01-upload
+    host: https://peacetrue.cn/merchant/files/
   jackson:
     mix-ins:
+#      com.github.peacetrue.user.UserVO: com.github.peacetrue.convention.PasswordIgnorer
       com.github.peacetrue.merchant.MerchantVO: com.github.peacetrue.convention.PasswordIgnorer
       com.github.peacetrue.member.MemberVO: com.github.peacetrue.convention.PasswordIgnorer

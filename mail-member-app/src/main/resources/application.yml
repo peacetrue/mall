@@ -16,7 +16,7 @@ logging:
 db:
   hostname: localhost
   username: root
-  password: 12345678
+  password: 1qw2!QW@
   schema: mall
 
 spring:
@@ -64,4 +64,4 @@ peacetrue:
       expression: 'execution(* com.github.peacetrue..*Service.*(*,..))'
   file:
     base-path: /Users/xiayx/Documents/tuchong/mall/01-upload
-    host: https://peacetrue.cn/platform/files/
+    host: https://peacetrue.cn/member/files/

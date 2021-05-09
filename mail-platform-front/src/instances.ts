@@ -1,6 +1,6 @@
-import {defaultHttpClientJoiner, HttpClient, httpClientProxies} from "peacetrue-httpclient";
+import {defaultHttpClientJoiner, HttpClient, httpClientProxies} from "@peace/httpclient";
 import {fetchUtils, GET_ONE, LegacyDataProvider} from "react-admin";
-import {PeaceSpringDataProviderBuilder} from "peacetrue-react-admin";
+import {PeaceSpringDataProviderBuilder} from "@peace/react-admin";
 import AuthProviderBuilder from "./AuthProviderBuilder";
 
 export const debugRequestHttpClient = (httpClient: HttpClient) => {
