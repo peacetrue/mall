@@ -1,0 +1,12 @@
+<view class="container">
+  <view tt:for="{{goods}}" tt:for-item="goodsItem" data-index="{{index}}" bindtap="toDetail" class="goods">
+    <view class="cover">
+      <image src="{{goodsItem.coverImageUrls[0]}}" style="width: 100%;" />
+    </view>
+    <view class="brief">
+      <text class="name" style="font-weight: bolder;">{{goodsItem.name}}</text>
+      &nbsp;
+      <text class="price" style="font-weight: bolder;">¥{{goodsItem.price}}</text>
+    </view>
+  </view>
+</view>

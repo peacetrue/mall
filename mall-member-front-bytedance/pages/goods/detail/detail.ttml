@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="goods">
+    <swiper indicator-dots="{{true}}">
+      <swiper-item tt:for="{{goods.coverImageUrls}}">
+        <image class="image" src="{{item}}" />
+      </swiper-item>
+    </swiper>
+
+    <view class="brief">
+      <text class="name">{{goods.name}}</text>
+      &nbsp;
+      <text class="price">¥{{goods.price}}</text>
+    </view>
+    <view style="margin-top: 5px;">
+      <view style="text-align: left;">商品详情：</view>
+      <rich-text nodes="{{goods.detail}}" class="detail"></rich-text>
+    </view>
+  </view>
+
+  <view style="position:fixed; bottom:100px; width:85%;" tt:if="{{goodsParams.show}}">
+    <view style="background-color: white; text-align: left;">
+      <label>购买数量：<input value="{{order.goodsCount}}" min="1" /></label>
+    </view>
+  </view>
+
+  <view style="position:fixed; bottom: 2px; width:85%;">
+    <button type="primary" bindtap="submitOrder" style="width: 100%;">购买</button>
+  </view>
+</view>

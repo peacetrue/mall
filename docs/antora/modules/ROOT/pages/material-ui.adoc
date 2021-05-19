@@ -6,3 +6,39 @@
 
 == CssBaseline
 
+== Container
+
+一个自适应屏幕的容器。
+
+.disableGutters
+默认有 `16px` 的左右填充，设置为 `true` 禁用填充。
+
+.maxWidth
+设置容器的最大宽度，默认为 `lg`。随屏幕宽度变化，超过 `maxWidth` 后，不再扩大。
+
+.fixed
+设置为 `true` 激活自动 `maxWidth`。从 `xs` 到 `xl` 不断扩大。如果设置了 `maxWidth` 此属性无效。
+
+== AppBar
+
+一个悬浮在网页顶端的容器，背景使用主色调，宽度为 100%，内部元素使用 flex 垂直排列。
+
+.position
+默认为 fixed。宽度相对于屏幕。
+
+.color
+默认为 primary （蓝色）。
+
+其他属性继承至 PaperProps。
+
+== InputBase
+
+一个基础输入框，可设置文本框元素，以及前后的装饰元素。
+
+== Typography
+
+== 问题
+
+=== 搜索框
+
+

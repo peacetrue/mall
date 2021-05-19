@@ -1,5 +1,5 @@
 = 商城
-xiayx <xiayouxue@hotmail.com>
+xiayx <xiayouxue@hotmall.com>
 v1.0, 2019-08-23: SNAPSHOT
 :doctype: docbook
 :toc: left
@@ -11,4 +11,4 @@ v1.0, 2019-08-23: SNAPSHOT
 :source-highlighter: highlightjs
 
 
-cp -R /Users/xiayx/Documents/haohan/confucianism-server/confucianism-react-admin/node_modules/* /Users/xiayx/Documents/tuchong/mall/mail-platform-front/node_modules
+cp -R /Users/xiayx/Documents/haohan/confucianism-server/confucianism-react-admin/node_modules/* /Users/xiayx/Documents/tuchong/mall/mall-platform-front/node_modules

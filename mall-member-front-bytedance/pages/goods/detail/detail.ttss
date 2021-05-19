@@ -1,0 +1,16 @@
+.container {
+  /* margin: 5px; */
+  text-align: center;
+}
+
+.goods{
+  margin: 10px;
+}
+
+.content{
+  text-align: left;
+}
+
+.price{
+  color: red;
+}

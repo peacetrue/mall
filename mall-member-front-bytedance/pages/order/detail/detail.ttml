@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="contact-address" bindtap="chooseAddress">
+        <view><text>{{shoppingAddress.contactName}}</text>&nbsp;<text>{{shoppingAddress.phoneNumber}}</text></view>
+        <view><text>{{shoppingAddress.detail}}</text></view>
+    </view>
+    <view class="goods">
+        
+    </view>
+    <view class="payment"></view>
+</view>

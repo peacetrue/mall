@@ -1,0 +1,11 @@
+.goods{
+  margin-bottom: 20px;
+}
+
+.brief{
+  text-align: left;
+}
+
+.price{
+  color: red;
+}

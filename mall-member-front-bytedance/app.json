@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/goods/list/list",
+    "pages/goods/detail/detail",
+    "pages/order/list/list",
+    "pages/order/detail/detail"
+  ],
+  "entryPagePath": "pages/goods/list/list",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "企云客",
+    "navigationBarTextStyle": "black"
+  }
+}
