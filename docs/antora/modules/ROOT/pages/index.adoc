@@ -1,4 +1,8 @@
 = 简介
 
-== 会员
+* platform： http://101.200.133.86:8200/index.html
+* merchant： http://101.200.133.86:8201/index.html
+* member： http://101.200.133.86:8202/index.html
+
+// 账号：admin/admin
 

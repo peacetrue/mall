@@ -18,7 +18,7 @@
   </view>
 
   <view style="position:fixed; bottom:100px; width:85%;" tt:if="{{goodsParams.show}}">
-    <view style="background-color: white; text-align: left;">
+    <view style="background-color: white; text-align: left;border: 1px solid grey;">
       <label>购买数量：<input value="{{order.goodsCount}}" min="1" /></label>
     </view>
   </view>

@@ -1,4 +1,5 @@
 server:
+  host: localhost
   port: 8200
 
 #  servlet:
@@ -70,7 +71,7 @@ peacetrue:
       expression: 'execution(* com.github.peacetrue..*Service.*(*,..))'
   file:
     base-path: /Users/xiayx/Documents/tuchong/mall/01-upload
-    host: https://peacetrue.cn/platform/files/
+    host: http://${server.host}:${server.port}/files/
   jackson:
     mix-ins:
       com.github.peacetrue.user.UserVO: com.github.peacetrue.convention.PasswordIgnorer

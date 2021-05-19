@@ -1,4 +1,7 @@
 <view class="container">
+  <view style="text-align: left;margin-bottom: 16px;border: 1px solid gray;">
+    <input bindinput="search" placeholder="请输入商品名称" />
+  </view>
   <view tt:for="{{goods}}" tt:for-item="goodsItem" data-index="{{index}}" bindtap="toDetail" class="goods">
     <view class="cover">
       <image src="{{goodsItem.coverImageUrls[0]}}" style="width: 100%;" />

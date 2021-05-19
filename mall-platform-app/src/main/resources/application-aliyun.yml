@@ -1,0 +1,15 @@
+server:
+  host: 101.200.133.86
+
+logging:
+  level:
+    com.github.peacetrue: debug
+    org.springframework: info
+  file:
+    path: /root/peacetrue/mall/${spring.application.name}-app/01-logs
+db:
+  password: 1qW@1qW@
+
+peacetrue:
+  file:
+    base-path: /root/peacetrue/mall/01-files
